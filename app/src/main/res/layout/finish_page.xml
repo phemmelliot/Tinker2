@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:background="@drawable/first_pics"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Time Up!"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="#3c5fd1"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="16dp"
+        android:alpha="0.5"
+        android:layout_gravity="center"
+        android:id="@+id/image"
+        android:background="@drawable/pic7"
+        />
+
+
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hey,  "
+            android:layout_marginLeft="32dp"
+            android:textSize="25dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:text="Oluwapelumi"
+            android:textColor="#3c5fd1"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You scored"
+            android:textSize="@dimen/activity_horizontal_margin"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:text="   2   "
+            android:textStyle="bold"
+            android:id="@+id/answers_gotten"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:text="out of "
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/activity_horizontal_margin"
+            android:text="20"
+            android:textStyle="bold"
+            android:id="@+id/attempted_question"
+            />
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="32dp"
+        android:layout_width="@dimen/Start_button"
+        android:layout_height="wrap_content"
+        android:id="@+id/start_again"
+        android:text="Play Again"
+        android:layout_gravity="center"
+        android:background="@drawable/round_text_box3"
+        />
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

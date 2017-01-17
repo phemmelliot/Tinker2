@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@drawable/first_pics"
+    android:layout_height="match_parent">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <!--<android.support.v7.widget.Toolbar-->
+        <!--android:id="@+id/toolbar"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="?attr/actionBarSize"-->
+        <!--android:background="?attr/colorPrimary"-->
+        <!--app:popupTheme="@style/AppTheme.PopupOverlay"/>-->
+
+    </android.support.design.widget.AppBarLayout>
+    <TextView
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="PLAY"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:textSize="50dp"
+        android:textColor="#3c5fd1"
+        android:textStyle="bold"
+        />
+
+    <TextView
+        android:id="@+id/about"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ABOUT"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="50dp"
+        android:textColor="#3c5fd1"
+        android:textStyle="bold"
+        />
+    <TextView
+        android:id="@+id/quit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="QUIT"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:textSize="50dp"
+        android:textColor="#3c5fd1"
+        android:textStyle="bold"
+        />
+</LinearLayout>
