@@ -1,131 +1,99 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="@drawable/first_pics"
+    android:background="@drawable/ba"
     android:layout_height="match_parent">
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
 
-    <LinearLayout
+
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:layout_weight="1">
 
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="ENTER YOUR NAME"
-        android:textStyle="bold"
-        android:textSize="25dp"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="32dp"
-        android:textColor="#3c5fd1"
-        />
+        <Spinner
+            android:id="@+id/select"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:background="@color/common_google_signin_btn_text_dark_default"
+            android:entries="@array/level"
+            android:padding="10dp"
+            android:popupBackground="@color/common_google_signin_btn_text_dark_default"
+            android:textAlignment="center" />
 
-    <EditText
-        android:id="@+id/player_name"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:layout_marginLeft="32dp"
-        android:layout_marginRight="@dimen/activity_vertical_margin"
-        android:padding="15dp"
-        android:hint="Enter your name"
-        android:textColor="#fafafa"
-        />
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Click the round buttons to enable difficulty level"
-        android:layout_marginLeft="32dp"
-        android:textSize="14dp"
-        android:textColor="#3c5fd1"
-        android:layout_marginTop="@dimen/activity_horizontal_margin"
-        android:layout_marginBottom="@dimen/activity_horizontal_margin"
-        />
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-    <RadioButton
-        android:id="@+id/ease"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginLeft="32dp"
-        android:layout_marginTop="16dp"
-        android:gravity="bottom"
-        />
         <TextView
+            android:id="@+id/text1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ease"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:textSize="25dp"
-            android:layout_marginTop="13dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:layout_above="@+id/player_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Name"
+            android:textColor="#35c757"
+            android:textSize="30sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/medium"
-            android:layout_width="wrap_content"
+        <EditText
+            android:id="@+id/player_name"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="16dp"
-            android:gravity="bottom"
-            />
+            android:layout_above="@+id/line1"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:background="@android:color/transparent"
+            android:gravity="center_horizontal"
+            android:hint="Enter your name"
+            android:textColor="#fafafa"
+            android:textColorHint="#fafafa"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+
         <TextView
+            android:id="@+id/diff"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Medium"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:textSize="25dp"
-            android:layout_marginTop="13dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
+            android:layout_above="@+id/select"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:text="Difficulty Level"
+            android:textColor="#3cd161"
+            android:textSize="25sp" />
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
-        <RadioButton
-            android:id="@+id/hard"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="32dp"
-            android:layout_marginTop="16dp"
-            android:gravity="bottom"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Hard"
-            android:layout_marginLeft="@dimen/activity_horizontal_margin"
-            android:textSize="25dp"
-            android:layout_marginTop="13dp"
-            android:textStyle="bold"
-            />
-    </LinearLayout>
-    <Button
-        android:id="@+id/start_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:background="@drawable/round_text_box3"
-        android:text="Start"
-        android:layout_gravity="right"
-        android:layout_marginRight="140dp"
-        android:layout_marginTop="60dp"
-        />
+        <View
+            android:id="@+id/line1"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_above="@+id/diff"
+            android:layout_marginBottom="20dp"
+            android:background="#fafafa" />
 
-    </LinearLayout>
-    </ScrollView>
+        <View
+            android:id="@+id/line2"
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:layout_below="@+id/select"
+            android:layout_marginTop="20dp"
+            android:background="#fafafa" />
+
+
+        <Button
+            android:id="@+id/start_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/round_text_box3"
+            android:onClick="onButtonClicked"
+            android:text="Start"
+            android:textColor="#050705" />
+
+
+    </RelativeLayout>
+
 </LinearLayout>

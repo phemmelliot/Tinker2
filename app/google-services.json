@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "191235792501",
+    "firebase_url": "https://tinker-5f1d6.firebaseio.com",
+    "project_id": "tinker-5f1d6",
+    "storage_bucket": "tinker-5f1d6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:191235792501:android:3e9fba40520153b6",
+        "android_client_info": {
+          "package_name": "com.example.toyin.tinker"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "191235792501-5k61ebsea173s0skc7s74fk9ujtmtg46.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBmFJgnwZnyXewD08JSpdVm3ZpFONIvflw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

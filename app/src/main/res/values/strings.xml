@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Tinker</string>
     <string name="action_settings">Settings</string>
+
+    <string name="level_selection">Select a difficulty level</string>
+    <string-array name="level">
+        <item>Easy</item>
+        <item>Medium</item>
+        <item>Difficult</item>
+    </string-array>
 </resources>

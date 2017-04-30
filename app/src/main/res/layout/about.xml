@@ -2,45 +2,101 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:background="#4d4a4a"
+    android:background="@drawable/ba"
     android:layout_height="match_parent"
     >
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:layout_marginTop="16dp"
             android:orientation="vertical"
             >
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Olaoye Oluwapelumi Adedamola"
-        android:textSize="20dp"
-        android:textColor="#fafafa"
-        />
-    <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
-        android:layout_gravity="center"
-        android:background="@drawable/oluwapelumi"
-        />
-
-            <TextView
+            <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textColor="#fafafa"
-                android:textSize="16dp"
-                android:text="A young developer discovered that the young generation of this time have difficulty mostly in mathematics which usually surfaces at childhood through puberty. Even the older ones make silly, so called, mistakes in performing simple calculations. Some are good with numbers without decimal but with it addition becomes a solid blocker they find it difficult to break through in thinking.
-
-
-This caught the interest of a young student of the department of Electronics and Electrical engineering in Obafemi Awolowo University, a developer curiously thinking about how modules combines together to metamorphose into software and application in the Cyber world. He found interest and passion in pursuing the basic knowledge of how machines through 1's and 0's communicate with each other. With the understanding that a great developer implies a good mathematician, a good economist, and a good analyst.The developer, in person of Olaoye Oluwapelumi Adedamola came up with a technological solution to help people in overcoming this infinitesimal insect that bites even the beasts down. It came in form of a mobile application.
-
-It is called TINKER. It is a mathematical app that gives questions to every player with a countdown of 10 seconds and keeps it up until the player gets the answer wrong and tells the player his/her score. The time implementation tests, proves and shows to the player how fast it takes his/her brain to compile and interprete basic calculations and the need for improvement for fast, accurate and precise thinking.
-Olaoye Oluwapelumi is also a cartoonist, a programmer with a number of language skills, a designer and a video editor. He's teachable and always longs for a quench of the basics in every thirst. Hope you enjoy the app."
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                >
+            <ImageView
+                android:id="@+id/back_arrow"
+                android:layout_width="50dp"
+                android:layout_height="30dp"
+                android:src="@drawable/back_arrow"
                 />
+            <TextView
+                android:id="@+id/back_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About"
+                android:textSize="20dp"
+                android:layout_gravity="center"
+                android:textColor="#c4c0c0"
+                android:layout_marginLeft="1dp"
+                />
+
+            </LinearLayout>
+            <ScrollView
+
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+               <LinearLayout
+                   android:layout_width="match_parent"
+                   android:layout_height="match_parent"
+                   android:orientation="vertical"
+                   >
+                   <TextView
+                       android:id="@+id/contact"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Contact Us"
+                       android:textSize="25dp"
+                       android:textColor="#c4c0c0"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginTop="16dp"
+                       />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#c4c0c0"
+                       android:layout_marginTop="15dp"
+                       />
+
+
+                   <TextView
+                       android:id="@+id/terms_and_policy"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Terms and Privacy Policy"
+                       android:textSize="25dp"
+                       android:textColor="#c4c0c0"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginTop="25dp"
+                       />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#c4c0c0"
+                       android:layout_marginTop="15dp"
+                       />
+
+                   <TextView
+                       android:id="@+id/about"
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="About"
+                       android:textSize="25dp"
+                       android:textColor="#c4c0c0"
+                       android:layout_marginLeft="16dp"
+                       android:layout_marginTop="25dp"
+                       />
+                   <View
+                       android:layout_width="match_parent"
+                       android:layout_height="1dp"
+                       android:background="#c4c0c0"
+                       android:layout_marginTop="15dp"
+                       />
+               </LinearLayout>
+            </ScrollView>
         </LinearLayout>
-    </ScrollView>
 </LinearLayout>

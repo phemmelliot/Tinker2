@@ -1,6 +1,8 @@
 package com.example.toyin.tinker.Activities;
 
+import android.content.Context;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -8,6 +10,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
+import android.support.v7.widget.Toolbar;
 
 import com.example.toyin.tinker.R;
 
@@ -19,17 +22,20 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_menu);
-//        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-//        setSupportActionBar(toolbar);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
         play = (TextView) findViewById(R.id.play);
         about = (TextView) findViewById(R.id.about);
-
         quit = (TextView) findViewById(R.id.quit);
         //A click on button play lead to the main page
         play.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity.this, DifficultActivity.class);
+                SharedPreferences share = getPreferences(Context.MODE_PRIVATE);
+                String previous_name = share.getString("name", null);
+                intent.putExtra("get_previous_name", previous_name);
                 startActivity(intent);
             }
         });
